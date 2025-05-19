@@ -1,0 +1,64 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "increment_counter",
+        "kind": 2,
+        "importPath": "sample",
+        "description": "sample",
+        "peekOfCode": "def increment_counter():\n    global counter\n    counter += 1\n    threading.Timer(30.0, increment_counter).start()\nincrement_counter()\n@app.route('/')\ndef hello_world():\n    return f\"Current Counter is {counter}\"\nif __name__ == '__main__':\n    port = int(os.environ.get('PORT', 5000))",
+        "detail": "sample",
+        "documentation": {}
+    },
+    {
+        "label": "hello_world",
+        "kind": 2,
+        "importPath": "sample",
+        "description": "sample",
+        "peekOfCode": "def hello_world():\n    return f\"Current Counter is {counter}\"\nif __name__ == '__main__':\n    port = int(os.environ.get('PORT', 5000))\n    app.run(host='0.0.0.0', port=port)",
+        "detail": "sample",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "sample",
+        "description": "sample",
+        "peekOfCode": "app = Flask(__name__)\ncounter = 0\ndef increment_counter():\n    global counter\n    counter += 1\n    threading.Timer(30.0, increment_counter).start()\nincrement_counter()\n@app.route('/')\ndef hello_world():\n    return f\"Current Counter is {counter}\"",
+        "detail": "sample",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "sample",
+        "description": "sample",
+        "peekOfCode": "counter = 0\ndef increment_counter():\n    global counter\n    counter += 1\n    threading.Timer(30.0, increment_counter).start()\nincrement_counter()\n@app.route('/')\ndef hello_world():\n    return f\"Current Counter is {counter}\"\nif __name__ == '__main__':",
+        "detail": "sample",
+        "documentation": {}
+    }
+]
